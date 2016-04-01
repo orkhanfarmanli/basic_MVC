@@ -18,27 +18,23 @@
 	</style>
 </head>
 <body>
-	
+
 
 <table border="1">
 
-<?php 
-		
+<?php
+
 
 $images = $this->model->selectAll();
 
 
 foreach ($images as $key => $value) {
-	
-	echo "<tr>";
+    echo "<tr>";
 
-		echo "<td>".$value['username']."</td><td>".$value['email']."</td>";
+    echo "<td>".$value['username']."</td><td>".$value['email']."</td>";
 
-	echo "</tr>";
-
+    echo "</tr>";
 }
-
-
 
  ?>
 </table>
